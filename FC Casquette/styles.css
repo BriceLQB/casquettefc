@@ -1,0 +1,245 @@
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.entete {
+    text-align: center;
+    padding-top: 1rem;
+    color: #087A3F;
+}
+
+header {
+    width: 100%;
+    height: 15rem;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    top: 0;
+}
+
+header .logo {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    padding: 0 1rem 0 1rem;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    background-color: #087A3F;
+    border-radius: 1rem;
+    padding: 0.75rem;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #F7C602;
+}
+
+@media only screen and (max-width: 768px) {
+    header nav ul {
+        padding-left: 0;
+    } 
+}
+
+@media only screen and (max-width: 480px) {
+    header a {
+        color: #087A3F;
+        background-color: transparent;
+        border-radius: 0rem;
+    } 
+    header a:hover {
+        color: #087A3F;
+        background-color: transparent;
+    }
+    header nav ul li {
+      padding: 0.2rem;
+    }
+}
+
+main {
+    position: relative;
+    top: 16rem;
+}
+
+.intro {
+    background-image: url('resources/Banner.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 22rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h1 {
+    background-color: #F7C602;
+    padding: 1rem;
+    color: white;
+}
+
+@media only screen and (max-width: 480px) {
+    .intro h1 {
+        text-align: center;
+    }
+}
+
+.valeurs {
+    background-color: #087A3F;
+}
+
+.valeurs .entete {
+    color: #F7C602;
+}
+
+.valeurs .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.v1, .v2, .v3 {
+    width: 20rem;
+    height: 15rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.v1 {
+    background-image: url('resources/stade.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.v2 {
+    background-image: url('resources/valeur2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.v3 {
+    background-image: url('resources/matchKitLarge.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.valeurs h3 {
+    color: white;
+    background-color: #F7C602;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+}
+
+.topplayers {
+    background-color: #F7C602;
+}
+
+.topplayers .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.player {
+    width: 15rem;
+    height: auto;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .player {
+        margin: 0.5rem;
+    }
+}
+
+.player img {
+    height: 10rem;
+    width: 7rem;
+}
+
+.player p {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.resultats {
+    background-color: #087A3F;
+}
+
+.resultats .entete {
+    color: #F7C602;
+}
+
+.resultats .container {
+    text-align: center;
+}
+
+.resultats ul {
+    padding-left: 0;
+    padding-bottom: 1.5rem;
+}
+
+.resultats li {
+    list-style: none;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.resultats li span {
+    font-size: 1.3rem;
+}
+
+.quote {
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    margin: 0 3rem 0 3rem;
+    color: #087A3F;
+}
+
+.quote .content {
+    font-size: 2rem;
+    font-style: italic;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.quote .quoter {
+    font-size: 1.5rem;
+}
